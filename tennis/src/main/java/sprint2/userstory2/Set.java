@@ -72,7 +72,6 @@ public class Set {
 		return "Player 1: "+ p1SetScore +" Game(S) - Player 2: " + p2SetScore + " Game(S)";
 	}
 
-	//UserStory 1 : if player score = 6 and opponent <= 4, it's a win. 
 	public boolean isFinished(){
 		if (p1SetScore == 6){
 			if (p2SetScore <= 4){
