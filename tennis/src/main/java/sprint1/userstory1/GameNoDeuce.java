@@ -1,4 +1,4 @@
-package kata.tennis.sprint1.userstory1;
+package sprint1.userstory1;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

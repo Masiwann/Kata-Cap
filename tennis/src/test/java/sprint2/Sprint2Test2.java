@@ -1,4 +1,4 @@
-package kata.tennis;
+package sprint2;
 
 import org.junit.Assert;
 import org.junit.Test;

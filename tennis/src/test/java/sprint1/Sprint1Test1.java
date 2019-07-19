@@ -1,14 +1,14 @@
-package kata.tennis;
+package sprint1;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import kata.tennis.sprint1.userstory2.GameDeuce;
+import sprint1.userstory1.GameNoDeuce;
 
-public class Sprint1Test2 {
-
-	GameDeuce tennisGame = new GameDeuce();
+public class Sprint1Test1 {
 	
+	GameNoDeuce tennisGame = new GameNoDeuce();
+
 	@Test
 	public void testP1EasyWin(){
 		tennisGame.p1Scores();
@@ -44,31 +44,6 @@ public class Sprint1Test2 {
 	}
 	
 	@Test
-	public void testAdvantage(){
-		tennisGame.p2Scores();
-		tennisGame.p2Scores();
-		tennisGame.p2Scores();
-		tennisGame.p1Scores();
-		tennisGame.p1Scores();
-		tennisGame.p1Scores();
-		tennisGame.p1Scores();
-		
-		Assert.assertEquals("ADV Player 1",tennisGame.checkCurrentScore());
-	}
-	
-	@Test
-	public void testDeuce(){
-		tennisGame.p2Scores();
-		tennisGame.p2Scores();
-		tennisGame.p2Scores();
-		tennisGame.p1Scores();
-		tennisGame.p1Scores();
-		tennisGame.p1Scores();
-		
-		Assert.assertEquals("DEUCE",tennisGame.checkCurrentScore());
-	}
-	
-	@Test
 	public void testGameAlreadyFinished(){
 		tennisGame.p1Scores();
 		tennisGame.p1Scores();
@@ -83,5 +58,5 @@ public class Sprint1Test2 {
 
 		Assert.assertEquals("Player 1 WON !",tennisGame.checkCurrentScore());
 	}
- 
+
 }
