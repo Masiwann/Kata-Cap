@@ -42,7 +42,6 @@ public class Sprint2Test2 {
 		}
 
 		Assert.assertEquals("Player 2 WON the set !", tennisSet.getSetScore());
-
 	}
 
 
@@ -56,24 +55,23 @@ public class Sprint2Test2 {
 			tennisSet.p2Scores();
 		}
 
-		//Currently 6-5
+		//Currently 5 games - 6 games
 		for(int i=0; i<7; i++){//7 points to win
 			tennisSet.p1Scores();
 		}
+		System.out.println(tennisSet.getSetScore());
 
-		//And now, the tiebreak game
-		for(int i=0; i<7; i++){//7 points to win
+		//And now 6 - 6, the tiebreak game
+		for(int i=0; i<8; i++){
 			tennisSet.p1Scores();
+			tennisSet.p2Scores();
 		}
-
-		//Currenlty 7-6, not enough
-		for(int i=0; i<7; i++){//7 points to win
-			tennisSet.p1Scores();
-		}
+		
+		//Player1 makes the difference
+		tennisSet.p1Scores();
+		tennisSet.p1Scores();
 
 		Assert.assertEquals("Player 1 WON the set !", tennisSet.getSetScore());
-
-
 	}
 
 }

@@ -61,10 +61,10 @@ public class Set {
 	//Get the set score (games won)
 	public String getSetScore(){
 		if (isFinished()){
-			if ((p1SetScore == 6 && p2SetScore <= 4) || (p1SetScore >= 7 && p2SetScore <= (p1SetScore - 2))){
+			if ((p1SetScore == 6 && p2SetScore <= 4) || p1SetScore == 7 ){
 				return "Player 1 WON the set !";
 			}
-			else if (((p2SetScore == 6 && p1SetScore <= 4) || (p2SetScore >= 7 && p1SetScore <= (p2SetScore - 2)))){
+			else if ((p2SetScore == 6 && p1SetScore <= 4) || p2SetScore == 7 ){
 				return "Player 2 WON the set !";
 			}
 		}
@@ -83,10 +83,7 @@ public class Set {
 				return true;
 			}
 		}
-
-		if (p2SetScore >= 7 && p1SetScore <= (p2SetScore - 2)) return true;
-		if (p1SetScore >= 7 && p2SetScore <= (p1SetScore - 2)) return true;
-
+		if (p1SetScore == 7 || p2SetScore == 7) return true;
 		return false;
 	}
 

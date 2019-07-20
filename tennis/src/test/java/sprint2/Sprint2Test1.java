@@ -36,12 +36,11 @@ public class Sprint2Test1 {
 			tennisSet.p2Scores();
 		}
 
-		//And now, the special Game
+		//And now 5 - 6, the special Game
 		for(int i=0; i<7; i++){//7 points to win
 			tennisSet.p2Scores();
 		}
 
 		Assert.assertEquals("Player 2 WON the set !", tennisSet.getSetScore());
-
 	}
 }
