@@ -4,7 +4,7 @@ public class Set {
 
 	private int p1SetScore;
 	private int p2SetScore;
-	private IGame currentGame;
+	private Game currentGame;
 
 	public Set(){
 		p1SetScore = 0;
@@ -19,11 +19,7 @@ public class Set {
 
 			if(currentGame.isFinished()){
 				p1SetScore++;
-				if (p1SetScore == 6 && (p2SetScore == 5 || p2SetScore == 6)){//Special game if 6-5 or 6-6
-					currentGame = new SpecialGame();
-				} else {
-					currentGame = new Game();
-				}
+				currentGame = new Game();
 			}
 		}
 	}
@@ -35,11 +31,7 @@ public class Set {
 
 			if(currentGame.isFinished()){
 				p2SetScore++;
-				if (p2SetScore == 6 && (p1SetScore == 5 || p1SetScore == 6)){//Special game if 6-5 or 6-6
-					currentGame = new SpecialGame();
-				}else{
-					currentGame = new Game();
-				}
+				currentGame = new Game();
 			}
 		}
 	}

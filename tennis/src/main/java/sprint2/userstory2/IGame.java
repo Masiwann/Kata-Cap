@@ -1,6 +1,6 @@
 package sprint2.userstory2;
 
-public interface IGame { //Facilite le travaille
+public interface IGame {
 	
 	public void p1Scores();
 	public void p2Scores();

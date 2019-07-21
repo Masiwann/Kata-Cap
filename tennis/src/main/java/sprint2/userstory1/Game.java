@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Game implements IGame{
+public class Game{
 
 	private int scoreP1;
 	private int scoreP2;

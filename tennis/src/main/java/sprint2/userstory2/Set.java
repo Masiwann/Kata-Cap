@@ -19,10 +19,7 @@ public class Set {
 
 			if(currentGame.isFinished()){
 				p1SetScore++;
-				if (p1SetScore == 6 && p2SetScore == 5){
-					currentGame = new SpecialGame();
-				}
-				else if(p1SetScore >= 6 && p2SetScore >= 6){
+				if(p1SetScore >= 6 && p2SetScore >= 6){
 					currentGame = new TieBreak();
 				} else {
 					currentGame = new Game();
@@ -38,17 +35,12 @@ public class Set {
 
 			if(currentGame.isFinished()){
 				p2SetScore++;
-				if (p2SetScore == 6 && p1SetScore == 5){
-					currentGame = new SpecialGame();
-
-				}
-				else if(p2SetScore >= 6 && p1SetScore >= 6){
+				if(p2SetScore >= 6 && p1SetScore >= 6){
 					currentGame = new TieBreak();
 				}
 				else {
 					currentGame = new Game();
 				}
-
 			}
 		}
 	}

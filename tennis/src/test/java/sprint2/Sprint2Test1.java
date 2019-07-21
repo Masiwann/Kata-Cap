@@ -27,7 +27,7 @@ public class Sprint2Test1 {
 	}
 
 	@Test
-	public void testSpecialGame(){
+	public void testFirstToSeven(){
 		for(int i=0; i<(4*5);i++){
 			tennisSet.p1Scores();
 		}
@@ -36,8 +36,8 @@ public class Sprint2Test1 {
 			tennisSet.p2Scores();
 		}
 
-		//And now 5 - 6, the special Game
-		for(int i=0; i<7; i++){//7 points to win
+		//And now 5 - 6
+		for(int i=0; i<4; i++){
 			tennisSet.p2Scores();
 		}
 
