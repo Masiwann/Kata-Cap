@@ -3,12 +3,14 @@ package sprint2;
 import org.junit.Assert;
 import org.junit.Test;
 
+import sets.SetWithTieBreak;
+
 
 public class Sprint2Test2 {
 
-	sprint2.userstory2.Set tennisSet = new sprint2.userstory2.Set();
+	SetWithTieBreak tennisSet = new SetWithTieBreak();
 
-	//@Test
+	@Test
 	public void testP1EasyWin(){
 		for(int i=0; i<(4*6);i++){ //4 points in a game, 6 games to win a set
 			tennisSet.p1Scores();
@@ -17,7 +19,7 @@ public class Sprint2Test2 {
 		Assert.assertEquals("Player 1 WON the set !", tennisSet.getSetScore());
 	}
 
-	//@Test
+	@Test
 	public void testP2EasyWin(){
 		for(int i=0; i<(4*6);i++){ //4 points in a game, 6 games to win a set
 			tennisSet.p2Scores();
@@ -26,7 +28,7 @@ public class Sprint2Test2 {
 		Assert.assertEquals("Player 2 WON the set !", tennisSet.getSetScore());
 	}
 
-	//@Test
+	@Test
 	public void testFirstToSeven(){
 		for(int i=0; i<(4*5);i++){
 			tennisSet.p1Scores();

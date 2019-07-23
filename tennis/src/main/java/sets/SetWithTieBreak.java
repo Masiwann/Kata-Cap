@@ -1,15 +1,19 @@
-package sprint2.userstory2;
+package sets;
 
-public class Set {
+import games.IGame;
+import games.TieBreak;
+import games.GameDeuce;
+
+public class SetWithTieBreak {
 
 	private int p1SetScore;
 	private int p2SetScore;
 	private IGame currentGame;
 
-	public Set(){
+	public SetWithTieBreak(){
 		p1SetScore = 0;
 		p2SetScore = 0;
-		currentGame = new Game();
+		currentGame = new GameDeuce();
 	}
 
 	public void p1Scores(){
@@ -22,7 +26,7 @@ public class Set {
 				if(p1SetScore >= 6 && p2SetScore >= 6){
 					currentGame = new TieBreak();
 				} else {
-					currentGame = new Game();
+					currentGame = new GameDeuce();
 				}
 			}
 		}
@@ -39,7 +43,7 @@ public class Set {
 					currentGame = new TieBreak();
 				}
 				else {
-					currentGame = new Game();
+					currentGame = new GameDeuce();
 				}
 			}
 		}

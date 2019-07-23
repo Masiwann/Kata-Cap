@@ -3,7 +3,7 @@ package sprint1;
 import org.junit.Assert;
 import org.junit.Test;
 
-import sprint1.userstory2.GameDeuce;
+import games.GameDeuce;
 
 public class Sprint1Test2 {
 
@@ -73,7 +73,7 @@ public class Sprint1Test2 {
 		tennisGame.p1Scores();
 		tennisGame.p1Scores();
 		tennisGame.p1Scores();
-		tennisGame.p1Scores();//Game finished ici
+		tennisGame.p1Scores();//Game finished here
 		tennisGame.p2Scores();
 		tennisGame.p2Scores();
 		tennisGame.p2Scores();

@@ -1,15 +1,17 @@
-package sprint2.userstory1;
+package sets;
 
-public class Set {
+import games.GameDeuce;
+
+public class SetWithoutTieBreak {
 
 	private int p1SetScore;
 	private int p2SetScore;
-	private Game currentGame;
+	private GameDeuce currentGame;
 
-	public Set(){
+	public SetWithoutTieBreak(){
 		p1SetScore = 0;
 		p2SetScore = 0;
-		currentGame = new Game();
+		currentGame = new GameDeuce();
 	}
 
 	public void p1Scores(){
@@ -19,7 +21,7 @@ public class Set {
 
 			if(currentGame.isFinished()){
 				p1SetScore++;
-				currentGame = new Game();
+				currentGame = new GameDeuce();
 			}
 		}
 	}
@@ -31,7 +33,7 @@ public class Set {
 
 			if(currentGame.isFinished()){
 				p2SetScore++;
-				currentGame = new Game();
+				currentGame = new GameDeuce();
 			}
 		}
 	}

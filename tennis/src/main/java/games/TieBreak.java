@@ -1,4 +1,4 @@
-package sprint2.userstory2;
+package games;
 
 public class TieBreak implements IGame{
 	

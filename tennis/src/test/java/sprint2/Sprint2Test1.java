@@ -3,10 +3,12 @@ package sprint2;
 import org.junit.Assert;
 import org.junit.Test;
 
+import sets.SetWithoutTieBreak;
+
 
 public class Sprint2Test1 {
 
-	sprint2.userstory1.Set tennisSet = new sprint2.userstory1.Set();
+	SetWithoutTieBreak tennisSet = new SetWithoutTieBreak();
 
 	@Test
 	public void testP1EasyWin(){
